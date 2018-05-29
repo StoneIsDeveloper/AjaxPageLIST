@@ -1,0 +1,11 @@
+D:\Projects\AjaxMVCPageList\AjaxMVCPageList\bin\Debug\netcoreapp2.0\AjaxMVCPageList.deps.json
+D:\Projects\AjaxMVCPageList\AjaxMVCPageList\bin\Debug\netcoreapp2.0\AjaxMVCPageList.runtimeconfig.json
+D:\Projects\AjaxMVCPageList\AjaxMVCPageList\bin\Debug\netcoreapp2.0\AjaxMVCPageList.runtimeconfig.dev.json
+D:\Projects\AjaxMVCPageList\AjaxMVCPageList\bin\Debug\netcoreapp2.0\AjaxMVCPageList.dll
+D:\Projects\AjaxMVCPageList\AjaxMVCPageList\obj\Debug\netcoreapp2.0\AjaxMVCPageList.csprojResolveAssemblyReference.cache
+D:\Projects\AjaxMVCPageList\AjaxMVCPageList\obj\Debug\netcoreapp2.0\AjaxMVCPageList.csproj.CoreCompileInputs.cache
+D:\Projects\AjaxMVCPageList\AjaxMVCPageList\obj\Debug\netcoreapp2.0\AjaxMVCPageList.AssemblyInfoInputs.cache
+D:\Projects\AjaxMVCPageList\AjaxMVCPageList\obj\Debug\netcoreapp2.0\AjaxMVCPageList.AssemblyInfo.cs
+D:\Projects\AjaxMVCPageList\AjaxMVCPageList\bin\Debug\netcoreapp2.0\AjaxMVCPageList.pdb
+D:\Projects\AjaxMVCPageList\AjaxMVCPageList\obj\Debug\netcoreapp2.0\AjaxMVCPageList.dll
+D:\Projects\AjaxMVCPageList\AjaxMVCPageList\obj\Debug\netcoreapp2.0\AjaxMVCPageList.pdb

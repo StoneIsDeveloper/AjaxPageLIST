@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="panel-info">
+    <h2>
+        异步分页
+    </h2>
+</div>
+<div class="panel-body">
+    <div class="row">
+        @{Html.RenderAction("ProductList", "Home", new {  });}
+    </div>
+</div>
+

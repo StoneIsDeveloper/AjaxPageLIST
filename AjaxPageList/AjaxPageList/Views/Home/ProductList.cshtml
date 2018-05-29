@@ -1,0 +1,74 @@
+﻿@model AjaxPageList.Models.PagedListModel
+@using PagedList.Mvc;
+
+
+<table id="page_tabel" class="table" style="min-height:350px;">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Node)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CatalogId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Products)
+        {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Node)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CatalogId)
+            </td>
+        </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">
+                <div id="pager_public" class="item">
+                    @Html.PagedListPager(
+                                      Model.Products,
+                                      page => Url.Action("ProductList", "Home", new { page = page }),
+                                      PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(
+                                          new PagedListRenderOptions
+                                          {
+                                              Display = PagedListDisplayMode.IfNeeded,
+                                              MaximumPageNumbersToDisplay = 5,
+                                          },
+                                          new AjaxOptions()
+                                          {
+                                              InsertionMode = InsertionMode.Replace,
+                                              HttpMethod = "GET",
+                                              UpdateTargetId = "page_tabel",
+                                              Url = Url.Action("ProductList", "Home", new { }),
+                                          }
+                                      )
+                                  )
+                </div>
+            </td>
+    </tfoot>
+</table>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#pager_public .pagination a').each(function (index, element) {
+            var myhref = $(element).attr('href');
+            console.log(myhref);
+            $(element).attr('data-ajax-url', myhref);
+        })
+    })
+
+</script>
